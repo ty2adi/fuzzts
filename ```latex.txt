@@ -1,0 +1,377 @@
+```latex
+% ==============================================================
+% Fuzzy Meal Recommender v1 — Full Plan (LaTeX PDF)
+% Copy into Overleaf (or compile locally) to generate a clean PDF.
+% ==============================================================
+
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{tcolorbox}
+\usepackage{listings}
+
+% -------- Colors --------
+\definecolor{Accent}{HTML}{1E88E5}
+\definecolor{AccentDark}{HTML}{0D47A1}
+\definecolor{SoftGray}{HTML}{F5F7FA}
+\definecolor{TextGray}{HTML}{37474F}
+\definecolor{CodeBg}{HTML}{0B1020}
+\definecolor{CodeText}{HTML}{E3F2FD}
+
+% -------- Hyperref --------
+\hypersetup{
+  colorlinks=true,
+  linkcolor=AccentDark,
+  urlcolor=AccentDark,
+  citecolor=AccentDark
+}
+
+% -------- Headings --------
+\titleformat{\section}{\Large\bfseries\color{AccentDark}}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries\color{TextGray}}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{TextGray}}{}{0pt}{}
+
+% -------- Header / Footer --------
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textbf{Fuzzy Meal Recommender v1}}
+\rhead{\textcolor{TextGray}{\thepage}}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% -------- Boxes --------
+\tcbset{
+  colback=SoftGray,
+  colframe=Accent!70!black,
+  arc=6pt,
+  boxrule=0.7pt,
+  left=10pt,right=10pt,top=8pt,bottom=8pt
+}
+
+% -------- Code styling --------
+\lstset{
+  basicstyle=\ttfamily\small,
+  backgroundcolor=\color{CodeBg},
+  keywordstyle=\color{Accent},
+  commentstyle=\color{Accent!60},
+  stringstyle=\color{CodeText},
+  numberstyle=\tiny\color{CodeText},
+  numbers=left,
+  numbersep=10pt,
+  frame=single,
+  rulecolor=\color{Accent!60},
+  frameround=tttt,
+  breaklines=true,
+  showstringspaces=false,
+  xleftmargin=12pt,
+  xrightmargin=12pt
+}
+
+\setstretch{1.05}
+
+\begin{document}
+
+% ---------------- Title Page ----------------
+\begin{titlepage}
+  \vspace*{1.2cm}
+  \begin{center}
+    {\Huge\bfseries\color{AccentDark} Fuzzy Meal Recommender v1}\\[0.35cm]
+    {\Large\color{TextGray} End-to-End Plan, Fuzzy Specification, and Implementation Guide}\\[0.8cm]
+
+    \begin{tcolorbox}[colback=SoftGray,colframe=AccentDark]
+      \textbf{Core premise:} users do not input preferences in real time.\newline
+      Preferences are inferred from past orders (per meal-slot), a nutritionist-maintained Mamdani FIS generates a target meal profile, and we match recipes by distance with smooth repetition control.
+    \end{tcolorbox}
+
+    \vfill
+    {\large\color{TextGray}Version: v1.0}\quad\textbullet\quad{\large\color{TextGray}Last updated: \today}
+  \end{center}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+% ---------------- 1. Scope ----------------
+\section{What we are building}
+\begin{tcolorbox}
+\textbf{Goal:} Recommend recipes for Breakfast/Lunch/Dinner using only past orders and recipe attributes.\\
+\textbf{Constraints:} no real-time questions like ``how much time do you have?''; safety filtering happens before recommendation.\\
+\textbf{Approach:} Profile Builder $\rightarrow$ Mamdani FIS (targets) $\rightarrow$ Distance matcher + decaying repeat penalties.
+\end{tcolorbox}
+
+\subsection{v1 feature scope}
+We commit to these recipe attributes only:
+\begin{itemize}[leftmargin=1.2em]
+  \item Calories (kcal)
+  \item Protein (g)
+  \item Carbs (g)
+  \item Fat (g)
+  \item Prep time (minutes)
+  \item Spice level (1--3)
+\end{itemize}
+
+Optional but recommended for repetition control:
+\begin{itemize}[leftmargin=1.2em]
+  \item Cuisine label (\texttt{cuisine\_id}) or a computed proxy (\texttt{cluster\_id})
+\end{itemize}
+
+% ---------------- 2. Data ----------------
+\section{Data model (minimum viable)}
+\subsection{Orders history (given)}
+Each row:
+\begin{itemize}[leftmargin=1.2em]
+  \item \texttt{user\_id}
+  \item \texttt{date}
+  \item \texttt{meal\_slot} $\in \{\text{Breakfast, Lunch, Dinner}\}$
+  \item \texttt{recipe\_id}
+\end{itemize}
+
+\subsection{Recipe table (given)}
+Each row:
+\begin{itemize}[leftmargin=1.2em]
+  \item \texttt{recipe\_id}
+  \item \texttt{calories\_kcal}, \texttt{protein\_g}, \texttt{carbs\_g}, \texttt{fat\_g}
+  \item \texttt{prep\_time\_min}
+  \item \texttt{spice\_level} $\in \{1,2,3\}$
+  \item \texttt{cuisine\_id} (recommended) or \texttt{cluster\_id} (computed)
+\end{itemize}
+
+\subsection{Derived profile table (computed)}
+\texttt{user\_slot\_profile} contains one row per (user, slot):
+\begin{itemize}[leftmargin=1.2em]
+  \item \texttt{cal\_pref}, \texttt{prot\_pref}, \texttt{carb\_pref}, \texttt{fat\_pref}, \texttt{prep\_pref}, \texttt{spice\_pref}
+  \item \texttt{n\_orders}, \texttt{updated\_at}
+\end{itemize}
+
+% ---------------- 3. System ----------------
+\section{System components}
+\subsection{Component 0: Safety filter (pre-existing)}
+We filter out unsafe recipes before any fuzzy logic or matching. After this stage, remaining recipes are treated as safe.
+
+\subsection{Component 1: Profile Builder (history $\rightarrow$ crisp inputs)}
+For each (user, meal-slot), compute medians over the last 21 orders (approx 7 days) regardless of meal type. This creates a global preference profile that stabilizes faster than slot-specific profiles.
+\begin{align*}
+\texttt{cal\_pref} &= \mathrm{median}(\texttt{calories\_kcal})\\
+\texttt{prot\_pref} &= \mathrm{median}(\texttt{protein\_g})\\
+\texttt{carb\_pref} &= \mathrm{median}(\texttt{carbs\_g})\\
+\texttt{fat\_pref} &= \mathrm{median}(\texttt{fat\_g})\\
+\texttt{prep\_pref} &= \mathrm{median}(\texttt{prep\_time\_min})\\
+\texttt{spice\_pref} &= \mathrm{median}(\texttt{spice\_level})
+\end{align*}
+
+\subsubsection{Cold-start shrinkage (important)}
+When $n$ is small, blend user medians with global slot medians using:
+\begin{equation}
+\texttt{pref} = \frac{n}{n+k}\,\texttt{pref}_{user} + \frac{k}{n+k}\,\texttt{pref}_{global,slot}
+\end{equation}
+Use $k = 10$ as a practical default.
+
+\subsection{Component 2: Mamdani FIS (policy $\rightarrow$ target vector)}
+Inputs (crisp): \texttt{meal\_slot} + the 6 inferred preferences above.
+
+Outputs (crisp after defuzzification):
+\begin{equation}
+\mathbf{t} = (t_{cal}, t_{prot}, t_{carb}, t_{fat}, t_{prep}, t_{spice})
+\end{equation}
+
+\subsection{Component 3: Selector (target $\rightarrow$ ranked recipes)}
+We normalize features and rank recipes by distance to target plus repetition penalties.
+
+% ---------------- 4. Fuzzy Spec ----------------
+\section{Fuzzy logic specification (v1)}
+\subsection{Inference method}
+We use Mamdani inference with:
+\begin{itemize}[leftmargin=1.2em]
+  \item AND = $\min$
+  \item OR = $\max$
+  \item implication = $\min$
+  \item aggregation = $\max$
+  \item defuzzification = centroid
+\end{itemize}
+
+\subsection{Membership functions (numeric variables)}
+For each numeric variable $x$ (calories, macros, prep time), derive membership boundaries from recipe percentiles:
+\begin{itemize}[leftmargin=1.2em]
+  \item $\min_x$, $p20_x$, $p50_x$, $p80_x$, $\max_x$
+\end{itemize}
+
+Define three fuzzy sets:
+\begin{align*}
+\mathrm{Low}(x) &:= \mathrm{trapmf}[\min_x,\min_x,p20_x,p50_x]\\
+\mathrm{Med}(x) &:= \mathrm{trimf}[p20_x,p50_x,p80_x]\\
+\mathrm{High}(x) &:= \mathrm{trapmf}[p50_x,p80_x,\max_x,\max_x]
+\end{align*}
+
+\subsection{Membership functions (spice level)}
+Universe: $[0,100]$.
+\begin{align*}
+\mathrm{Mild}(s) &:= \mathrm{trimf}[0, 0, 40]\\
+\mathrm{Medium}(s) &:= \mathrm{trimf}[20, 50, 80]\\
+\mathrm{Hot}(s) &:= \mathrm{trimf}[60, 100, 100]
+\end{align*}
+
+\subsection{Tunable parameters (keep minimal)}
+In v1, personalization primarily comes from inferred preferences. If tunability is desired, allow small per-user-per-slot shifts only for:
+\begin{itemize}[leftmargin=1.2em]
+  \item spice membership peaks: $\Delta_{spice} \in [-15, +15]$ (Scaled for 0-100)
+  \item prep boundaries: $\Delta_{prep} \in [-10, +10]$ minutes
+  \item Feature Weights $w_i$: Trainable based on user choice error.
+\end{itemize}
+
+% ---------------- 5. Rule Base ----------------
+\section{Rule base (safe and small)}
+Two families:
+
+\subsection{A) Slot baseline nudges (policy)}
+\begin{itemize}[leftmargin=1.2em]
+  \item If meal is Breakfast then $t_{cal}$ is High
+  \item If meal is Lunch then $t_{cal}$ is Med
+  \item If meal is Dinner then $t_{cal}$ is Low
+  \item If meal is Dinner then $t_{prep}$ is Low
+  \item If meal is Dinner then $t_{spice}$ is Mild
+\end{itemize}
+
+\subsection{B) Preference-following rules (core personalization)}
+For each $X \in \{cal, prot, carb, fat, prep\}$:
+\begin{itemize}[leftmargin=1.2em]
+  \item If $X_{pref}$ is Low then $t_X$ is Low
+  \item If $X_{pref}$ is Med then $t_X$ is Med
+  \item If $X_{pref}$ is High then $t_X$ is High
+\end{itemize}
+
+For spice:
+\begin{itemize}[leftmargin=1.2em]
+  \item If spice\_pref is Mild then $t_{spice}$ is Mild
+  \item If spice\_pref is Medium then $t_{spice}$ is Medium
+  \item If spice\_pref is Hot then $t_{spice}$ is Hot
+\end{itemize}
+
+\begin{tcolorbox}
+\textbf{Why this rule base is safe:} outputs are bounded by dataset-derived ranges, and the system mostly mirrors observed user behavior, tempered by light slot nudges.
+\end{tcolorbox}
+
+% ---------------- 6. Matching ----------------
+\section{Matching and ranking}
+\subsection{Normalization}
+Use either z-score or min--max normalization. Apply the same transform to recipe vectors and target vector.
+
+\subsection{Distance to target}
+Order features as:
+\begin{equation}
+\mathbf{z}(r) = (z_{cal}, z_{prot}, z_{carb}, z_{fat}, z_{prep}, z_{spice})
+\end{equation}
+
+Weighted squared distance:
+\begin{equation}
+\mathrm{Dist}(r) = \sum_i w_i\,(z_i(r) - z_i(\mathbf{t}))^2
+\end{equation}
+
+Starting weights (v1):
+\begin{center}
+\begin{tabular}{l c}
+\toprule
+Feature & Weight \\
+\midrule
+Calories & 0.25 \\
+Protein & 0.20 \\
+Carbs & 0.20 \\
+Fat & 0.15 \\
+Prep time & 0.10 \\
+Spice & 0.10 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+% ---------------- 7. Repetition Control ----------------
+\section{Repetition control v1.1 (decaying penalties)}
+Hard blocks are too crude when the user repeats favorites or the catalog is small. We add decaying penalties.
+
+Let:
+\begin{itemize}[leftmargin=1.2em]
+  \item $d_r$ = days since this exact recipe was last eaten
+  \item $d_c$ = days since this cuisine (or cluster) was last eaten
+\end{itemize}
+
+\subsection{Exact recipe penalty}
+\begin{equation}
+P_{recipe}(r) = A_r\,\exp\left(-\frac{d_r}{\tau_r}\right)
+\end{equation}
+Defaults: $A_r = 5.0$, $\tau_r = 3$. 
+\textbf{Streak Penalty}: If $r$ was consumed in the simulation step $t-1$ AND $t-2$ (consecutive streak), set $A_r = 100.0$.
+
+\subsection{Cuisine penalty}
+\begin{equation}
+P_{cuisine}(r) = A_c\,\exp\left(-\frac{d_c}{\tau_c}\right)
+\end{equation}
+Defaults: $A_c = 0.35$, $\tau_c = 2$.
+
+\subsection{Final ranking score (maximize)}
+\begin{equation}
+\mathrm{Similarity}(r) = \frac{1}{1 + \mathrm{Dist}(r) + P_{recipe}(r) + P_{cuisine}(r)}
+\end{equation}
+Recipes are ranked by descending Similarity Score (1.0 = Perfect).
+
+% ---------------- 8. Implementation ----------------
+\section{Implementation plan}
+\subsection{Phase 1: Data pipeline}
+\begin{enumerate}[leftmargin=1.2em]
+  \item Ensure recipe table contains the 6 features and cuisine\_id (or compute cluster\_id).
+  \item Build user\_slot\_profile job (medians + shrinkage).
+  \item Build last-eaten lookups for recipe and cuisine.
+\end{enumerate}
+
+\subsection{Phase 2: FIS engine}
+\begin{enumerate}[leftmargin=1.2em]
+  \item Compute percentiles for each numeric feature.
+  \item Define membership functions.
+  \item Implement Mamdani inference + centroid defuzzification.
+  \item Implement the rule base.
+\end{enumerate}
+
+\subsection{Phase 3: Selector}
+\begin{enumerate}[leftmargin=1.2em]
+  \item Normalize recipe vectors and target vector.
+  \item Compute distance-to-target.
+  \item Add decaying repeat penalties.
+  \item Return Top-1 or Top-3.
+\end{enumerate}
+
+\subsection{Phase 4: Logging and updates}
+\begin{enumerate}[leftmargin=1.2em]
+  \item Log recommendations and chosen recipe.
+  \item Update user\_slot\_profile and last-eaten lookups.
+\end{enumerate}
+
+\begin{tcolorbox}
+\textbf{Definition of “working v1”:} the system produces sensible meal-slot-aware recommendations, adapts over time as orders accumulate, and avoids annoying repetition using smooth decay penalties.
+\end{tcolorbox}
+
+\newpage
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.25\linewidth]{Decision Point Option-2025-12-15-043817.png}
+    \caption{Fuzzy Logic Impementation flowchart}
+    
+    
+    
+\end{figure}
+
+
+\end{document}
+```

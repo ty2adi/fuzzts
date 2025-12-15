@@ -1,0 +1,267 @@
+=== COMPREHENSIVE WEEKLY MEAL PLAN & AUDIT ===
+Key:
+  Similarity: Final Score (0.0 - 1.0). Higher is better.
+  Match(Dist^2): Raw deviation from Target. Lower is better (0=Perfect).
+  Penalty: Repetition decay. Higher means recently eaten.
+
+Initial Spice Weight: 0.1550
+
+--- DAY 1: 2025-12-16 ---
+  [Breakfast] Target: Cal=643, Spice=25
+    #1 [SELECTED]: Finger Foods: Frittata Muffins
+       Sim: 0.0249 | Match(Dist^2): 39.2110 | Penalty: 0.0000
+    #2 [REJECTED]: Slow Cooker Beef Stew
+       Sim: 0.0247 | Match(Dist^2): 39.4945 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Slow Cooker Chicken Taco Soup
+       Sim: 0.0242 | Match(Dist^2): 40.2787 | Penalty: 0.0000 [Poor Target Match]
+    #4 [REJECTED]: Vegan Taco bowls with Cilantro Lime Cauliflower Rice
+       Sim: 0.0231 | Match(Dist^2): 42.2591 | Penalty: 0.0000 [Poor Target Match]
+    #5 [REJECTED]: Pork Fried Rice
+       Sim: 0.0202 | Match(Dist^2): 48.5189 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=497, Spice=20
+    #1 [SELECTED]: Green Thai Curry with Beef
+       Sim: 0.0210 | Match(Dist^2): 46.5644 | Penalty: 0.0000
+    #2 [REJECTED]: Country Breakfast: Tofu and Veggie Scramble With Home Fries
+       Sim: 0.0210 | Match(Dist^2): 46.7167 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Meyer Lemon Ricotta Pancakes with Blackberry Compote
+       Sim: 0.0209 | Match(Dist^2): 46.8595 | Penalty: 0.0000 [Poor Target Match]
+    #4 [REJECTED]: Cheesy Frittata with Spinach, Asparagus and Mushrooms
+       Sim: 0.0205 | Match(Dist^2): 47.8460 | Penalty: 0.0000 [Poor Target Match]
+    #5 [REJECTED]: Bread Omlette
+       Sim: 0.0202 | Match(Dist^2): 46.4368 | Penalty: 1.9510 [High Recency Penalty]
+
+  [Dinner] Target: Cal=339, Spice=25
+    #1 [SELECTED]: Ratatouille
+       Sim: 0.0194 | Match(Dist^2): 50.4885 | Penalty: 0.0000
+    #2 [REJECTED]: Golden Beet Panzanella
+       Sim: 0.0193 | Match(Dist^2): 50.8258 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Chinese Style Chicken and Noodle Stir Fry
+       Sim: 0.0186 | Match(Dist^2): 52.8975 | Penalty: 0.0000 [Poor Target Match]
+    #4 [REJECTED]: Mixed Paella
+       Sim: 0.0185 | Match(Dist^2): 52.9523 | Penalty: 0.0000 [Poor Target Match]
+    #5 [REJECTED]: Greek Marinade with Yogurt
+       Sim: 0.0184 | Match(Dist^2): 53.2918 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 2: 2025-12-17 ---
+  [Breakfast] Target: Cal=643, Spice=20
+    #1 [SELECTED]: Slow Cooker Beef Stew
+       Sim: 0.0219 | Match(Dist^2): 44.7334 | Penalty: 0.0000
+    #2 [REJECTED]: Finger Foods: Frittata Muffins
+       Sim: 0.0217 | Match(Dist^2): 40.7575 | Penalty: 4.2916 [High Recency Penalty]
+    #3 [REJECTED]: Slow Cooker Chicken Taco Soup
+       Sim: 0.0215 | Match(Dist^2): 45.4798 | Penalty: 0.0000 [Poor Target Match]
+    #4 [REJECTED]: Vegan Taco bowls with Cilantro Lime Cauliflower Rice
+       Sim: 0.0205 | Match(Dist^2): 47.7413 | Penalty: 0.0000 [Poor Target Match]
+    #5 [REJECTED]: Osso Buco
+       Sim: 0.0185 | Match(Dist^2): 52.9186 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=515, Spice=19
+    #1 [SELECTED]: Meyer Lemon Ricotta Pancakes with Blackberry Compote
+       Sim: 0.0202 | Match(Dist^2): 48.4001 | Penalty: 0.0000
+    #2 [REJECTED]: Bread Omlette
+       Sim: 0.0202 | Match(Dist^2): 47.1293 | Penalty: 1.3979 [High Recency Penalty]
+    #3 [REJECTED]: Country Breakfast: Tofu and Veggie Scramble With Home Fries
+       Sim: 0.0202 | Match(Dist^2): 48.5787 | Penalty: 0.0000 [Poor Target Match]
+    #4 [REJECTED]: Cheesy Frittata with Spinach, Asparagus and Mushrooms
+       Sim: 0.0198 | Match(Dist^2): 49.6194 | Penalty: 0.0000 [Poor Target Match]
+    #5 [REJECTED]: Smoky Black Bean Soup With Sweet Potato & Kale
+       Sim: 0.0195 | Match(Dist^2): 50.3310 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=351, Spice=19
+    #1 [SELECTED]: Golden Beet Panzanella
+       Sim: 0.0185 | Match(Dist^2): 53.0868 | Penalty: 0.0000
+    #2 [REJECTED]: Easy Cheesy Pizza Casserole
+       Sim: 0.0181 | Match(Dist^2): 54.1764 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Chinese Style Chicken and Noodle Stir Fry
+       Sim: 0.0178 | Match(Dist^2): 55.0598 | Penalty: 0.0000 [Poor Target Match]
+    #4 [REJECTED]: Mixed Paella
+       Sim: 0.0178 | Match(Dist^2): 55.1342 | Penalty: 0.0000 [Poor Target Match]
+    #5 [REJECTED]: Greek Marinade with Yogurt
+       Sim: 0.0177 | Match(Dist^2): 55.5282 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 3: 2025-12-18 ---
+  [Breakfast] Target: Cal=644, Spice=19
+    #1 [SELECTED]: Finger Foods: Frittata Muffins
+       Sim: 0.0217 | Match(Dist^2): 42.0327 | Penalty: 3.0751
+    #2 [REJECTED]: Slow Cooker Chicken Taco Soup
+       Sim: 0.0202 | Match(Dist^2): 48.4206 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Vegan Taco bowls with Cilantro Lime Cauliflower Rice
+       Sim: 0.0193 | Match(Dist^2): 50.8339 | Penalty: 0.0000 [Poor Target Match]
+    #4 [REJECTED]: Slow Cooker Beef Stew
+       Sim: 0.0189 | Match(Dist^2): 47.5933 | Penalty: 4.2916 [High Recency Penalty]
+    #5 [REJECTED]: Osso Buco
+       Sim: 0.0176 | Match(Dist^2): 55.6982 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=579, Spice=19
+    #1 [SELECTED]: Bread Omlette
+       Sim: 0.0199 | Match(Dist^2): 48.2788 | Penalty: 1.0017
+    #2 [REJECTED]: Country Breakfast: Tofu and Veggie Scramble With Home Fries
+       Sim: 0.0189 | Match(Dist^2): 51.8330 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Cheesy Frittata with Spinach, Asparagus and Mushrooms
+       Sim: 0.0184 | Match(Dist^2): 53.2783 | Penalty: 0.0000 [Poor Target Match]
+    #4 [REJECTED]: Easy Granola with Goji berries, nuts and seeds
+       Sim: 0.0179 | Match(Dist^2): 54.8823 | Penalty: 0.0000 [Poor Target Match]
+    #5 [REJECTED]: Meyer Lemon Ricotta Pancakes with Blackberry Compote
+       Sim: 0.0178 | Match(Dist^2): 51.4181 | Penalty: 3.8403 [High Recency Penalty]
+
+  [Dinner] Target: Cal=428, Spice=19
+    #1 [SELECTED]: Easy Cheesy Pizza Casserole
+       Sim: 0.0191 | Match(Dist^2): 51.4093 | Penalty: 0.0000
+    #2 [REJECTED]: Chinese Style Chicken and Noodle Stir Fry
+       Sim: 0.0164 | Match(Dist^2): 59.9588 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Italian Seafood Stew
+       Sim: 0.0164 | Match(Dist^2): 59.9839 | Penalty: 0.0000 [Poor Target Match]
+    #4 [REJECTED]: Mixed Paella
+       Sim: 0.0163 | Match(Dist^2): 60.3874 | Penalty: 0.0000 [Poor Target Match]
+    #5 [REJECTED]: Greek Marinade with Yogurt
+       Sim: 0.0162 | Match(Dist^2): 60.7874 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 4: 2025-12-19 ---
+  [Breakfast] Target: Cal=650, Spice=19
+    #1 [SELECTED]: Finger Foods: Frittata Muffins
+       Sim: 0.0204 | Match(Dist^2): 43.7880 | Penalty: 4.2916
+    #2 [REJECTED]: Slow Cooker Chicken Taco Soup
+       Sim: 0.0183 | Match(Dist^2): 53.6623 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Slow Cooker Beef Stew
+       Sim: 0.0176 | Match(Dist^2): 52.8159 | Penalty: 3.0751 [High Recency Penalty]
+    #4 [REJECTED]: Vegan Taco bowls with Cilantro Lime Cauliflower Rice
+       Sim: 0.0174 | Match(Dist^2): 56.4499 | Penalty: 0.0000 [Poor Target Match]
+    #5 [REJECTED]: Osso Buco
+       Sim: 0.0164 | Match(Dist^2): 60.0137 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=615, Spice=19
+    #1 [SELECTED]: Bread Omlette
+       Sim: 0.0181 | Match(Dist^2): 50.3680 | Penalty: 3.8403
+    #2 [REJECTED]: Country Breakfast: Tofu and Veggie Scramble With Home Fries
+       Sim: 0.0177 | Match(Dist^2): 55.5100 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Cheesy Frittata with Spinach, Asparagus and Mushrooms
+       Sim: 0.0171 | Match(Dist^2): 57.4686 | Penalty: 0.0000 [Poor Target Match]
+    #4 [REJECTED]: Meyer Lemon Ricotta Pancakes with Blackberry Compote
+       Sim: 0.0170 | Match(Dist^2): 55.0666 | Penalty: 2.7517 [High Recency Penalty]
+    #5 [REJECTED]: Easy Granola with Goji berries, nuts and seeds
+       Sim: 0.0166 | Match(Dist^2): 59.2470 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=477, Spice=19
+    #1 [SELECTED]: Easy Cheesy Pizza Casserole
+       Sim: 0.0181 | Match(Dist^2): 50.3242 | Penalty: 3.8940
+    #2 [REJECTED]: Italian Seafood Stew
+       Sim: 0.0160 | Match(Dist^2): 61.3314 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Golden Beet Panzanella
+       Sim: 0.0154 | Match(Dist^2): 61.1965 | Penalty: 2.7902 [High Recency Penalty]
+    #4 [REJECTED]: Chinese Style Chicken and Noodle Stir Fry
+       Sim: 0.0154 | Match(Dist^2): 64.0880 | Penalty: 0.0000 [Poor Target Match]
+    #5 [REJECTED]: Ratatouille
+       Sim: 0.0153 | Match(Dist^2): 62.5720 | Penalty: 1.9992 [High Recency Penalty]
+
+--- DAY 5: 2025-12-20 ---
+  [Breakfast] Target: Cal=668, Spice=19
+    #1 [SELECTED]: Slow Cooker Chicken Taco Soup
+       Sim: 0.0172 | Match(Dist^2): 57.1239 | Penalty: 0.0000
+    #2 [REJECTED]: Slow Cooker Beef Stew
+       Sim: 0.0169 | Match(Dist^2): 56.0403 | Penalty: 2.2034 [High Recency Penalty]
+    #3 [REJECTED]: Vegan Taco bowls with Cilantro Lime Cauliflower Rice
+       Sim: 0.0164 | Match(Dist^2): 60.0608 | Penalty: 0.0000 [Poor Target Match]
+    #4 [REJECTED]: Osso Buco
+       Sim: 0.0157 | Match(Dist^2): 62.8138 | Penalty: 0.0000 [Poor Target Match]
+    #5 [REJECTED]: Pork Fried Rice
+       Sim: 0.0153 | Match(Dist^2): 64.2243 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=620, Spice=19
+    #1 [SELECTED]: Country Breakfast: Tofu and Veggie Scramble With Home Fries
+       Sim: 0.0171 | Match(Dist^2): 57.5549 | Penalty: 0.0000
+    #2 [REJECTED]: Meyer Lemon Ricotta Pancakes with Blackberry Compote
+       Sim: 0.0166 | Match(Dist^2): 57.1922 | Penalty: 1.9717 [High Recency Penalty]
+    #3 [REJECTED]: Cheesy Frittata with Spinach, Asparagus and Mushrooms
+       Sim: 0.0165 | Match(Dist^2): 59.7515 | Penalty: 0.0000 [Poor Target Match]
+    #4 [REJECTED]: Easy Granola with Goji berries, nuts and seeds
+       Sim: 0.0160 | Match(Dist^2): 61.6296 | Penalty: 0.0000 [Poor Target Match]
+    #5 [REJECTED]: Green Thai Curry with Beef
+       Sim: 0.0158 | Match(Dist^2): 60.8756 | Penalty: 1.4128 [High Recency Penalty]
+
+  [Dinner] Target: Cal=477, Spice=19
+    #1 [SELECTED]: Italian Seafood Stew
+       Sim: 0.0154 | Match(Dist^2): 63.9538 | Penalty: 0.0000
+    #2 [REJECTED]: Golden Beet Panzanella
+       Sim: 0.0151 | Match(Dist^2): 63.3519 | Penalty: 1.9992 [High Recency Penalty]
+    #3 [REJECTED]: Ratatouille
+       Sim: 0.0149 | Match(Dist^2): 64.8847 | Penalty: 1.4325 [High Recency Penalty]
+    #4 [REJECTED]: Chinese Style Chicken and Noodle Stir Fry
+       Sim: 0.0148 | Match(Dist^2): 66.5784 | Penalty: 0.0000 [Poor Target Match]
+    #5 [REJECTED]: Mixed Paella
+       Sim: 0.0146 | Match(Dist^2): 67.2990 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 6: 2025-12-21 ---
+  [Breakfast] Target: Cal=661, Spice=19
+    #1 [SELECTED]: Finger Foods: Frittata Muffins
+       Sim: 0.0196 | Match(Dist^2): 46.8363 | Penalty: 3.0751
+    #2 [REJECTED]: Slow Cooker Beef Stew
+       Sim: 0.0158 | Match(Dist^2): 60.7094 | Penalty: 1.5788 [High Recency Penalty]
+    #3 [REJECTED]: Osso Buco
+       Sim: 0.0151 | Match(Dist^2): 65.2636 | Penalty: 0.0000 [Poor Target Match]
+    #4 [REJECTED]: Vegan Taco bowls with Cilantro Lime Cauliflower Rice
+       Sim: 0.0150 | Match(Dist^2): 65.6341 | Penalty: 0.0000 [Poor Target Match]
+    #5 [REJECTED]: Slow Cooker Chicken Taco Soup
+       Sim: 0.0147 | Match(Dist^2): 62.9325 | Penalty: 4.2916 [High Recency Penalty]
+
+  [Lunch] Target: Cal=642, Spice=19
+    #1 [SELECTED]: Bread Omlette
+       Sim: 0.0171 | Match(Dist^2): 54.6972 | Penalty: 2.7517
+    #2 [REJECTED]: Meyer Lemon Ricotta Pancakes with Blackberry Compote
+       Sim: 0.0155 | Match(Dist^2): 62.0827 | Penalty: 1.4128 [High Recency Penalty]
+    #3 [REJECTED]: Cheesy Frittata with Spinach, Asparagus and Mushrooms
+       Sim: 0.0151 | Match(Dist^2): 65.3937 | Penalty: 0.0000 [Poor Target Match]
+    #4 [REJECTED]: Country Breakfast: Tofu and Veggie Scramble With Home Fries
+       Sim: 0.0148 | Match(Dist^2): 62.6515 | Penalty: 3.8403 [High Recency Penalty]
+    #5 [REJECTED]: Easy Granola with Goji berries, nuts and seeds
+       Sim: 0.0146 | Match(Dist^2): 67.4723 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=530, Spice=19
+    #1 [SELECTED]: Easy Cheesy Pizza Casserole
+       Sim: 0.0183 | Match(Dist^2): 50.7868 | Penalty: 2.7902
+    #2 [REJECTED]: Italian Seafood Stew
+       Sim: 0.0145 | Match(Dist^2): 64.1011 | Penalty: 3.8940 [High Recency Penalty]
+    #3 [REJECTED]: Golden Beet Panzanella
+       Sim: 0.0136 | Match(Dist^2): 70.9360 | Penalty: 1.4325 [High Recency Penalty]
+    #4 [REJECTED]: Chinese Style Chicken and Noodle Stir Fry
+       Sim: 0.0135 | Match(Dist^2): 73.1950 | Penalty: 0.0000 [Poor Target Match]
+    #5 [REJECTED]: Ratatouille
+       Sim: 0.0134 | Match(Dist^2): 72.6063 | Penalty: 1.0264 [High Recency Penalty]
+
+--- DAY 7: 2025-12-22 ---
+  [Breakfast] Target: Cal=674, Spice=19
+    #1 [SELECTED]: Finger Foods: Frittata Muffins
+       Sim: 0.0187 | Match(Dist^2): 48.0631 | Penalty: 4.2916
+    #2 [REJECTED]: Slow Cooker Beef Stew
+       Sim: 0.0154 | Match(Dist^2): 62.6917 | Penalty: 1.1313 [High Recency Penalty]
+    #3 [REJECTED]: Osso Buco
+       Sim: 0.0146 | Match(Dist^2): 67.3652 | Penalty: 0.0000 [Poor Target Match]
+    #4 [REJECTED]: Vegan Taco bowls with Cilantro Lime Cauliflower Rice
+       Sim: 0.0146 | Match(Dist^2): 67.7034 | Penalty: 0.0000 [Poor Target Match]
+    #5 [REJECTED]: Slow Cooker Chicken Taco Soup
+       Sim: 0.0145 | Match(Dist^2): 64.8863 | Penalty: 3.0751 [High Recency Penalty]
+
+  [Lunch] Target: Cal=642, Spice=19
+    #1 [SELECTED]: Bread Omlette
+       Sim: 0.0165 | Match(Dist^2): 55.9485 | Penalty: 3.8403
+    #2 [REJECTED]: Meyer Lemon Ricotta Pancakes with Blackberry Compote
+       Sim: 0.0153 | Match(Dist^2): 63.5595 | Penalty: 1.0123 [High Recency Penalty]
+    #3 [REJECTED]: Country Breakfast: Tofu and Veggie Scramble With Home Fries
+       Sim: 0.0148 | Match(Dist^2): 64.0083 | Penalty: 2.7517 [High Recency Penalty]
+    #4 [REJECTED]: Cheesy Frittata with Spinach, Asparagus and Mushrooms
+       Sim: 0.0147 | Match(Dist^2): 66.9496 | Penalty: 0.0000 [Poor Target Match]
+    #5 [REJECTED]: Easy Granola with Goji berries, nuts and seeds
+       Sim: 0.0143 | Match(Dist^2): 69.0753 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=530, Spice=19
+    #1 [SELECTED]: Easy Cheesy Pizza Casserole
+       Sim: 0.0176 | Match(Dist^2): 52.0590 | Penalty: 3.8940
+    #2 [REJECTED]: Italian Seafood Stew
+       Sim: 0.0144 | Match(Dist^2): 65.6195 | Penalty: 2.7902 [High Recency Penalty]
+    #3 [REJECTED]: Golden Beet Panzanella
+       Sim: 0.0134 | Match(Dist^2): 72.5204 | Penalty: 1.0264 [High Recency Penalty]
+    #4 [REJECTED]: Chinese Style Chicken and Noodle Stir Fry
+       Sim: 0.0132 | Match(Dist^2): 74.8879 | Penalty: 0.0000 [Poor Target Match]
+    #5 [REJECTED]: Ratatouille
+       Sim: 0.0132 | Match(Dist^2): 74.2221 | Penalty: 0.7355 [High Recency Penalty]
+
