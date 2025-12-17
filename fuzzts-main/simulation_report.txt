@@ -1,0 +1,800 @@
+=== COMPREHENSIVE 30-DAY MEAL PLAN & AUDIT ===
+Key:
+  Similarity: Final Score (0.0 - 1.0). Higher is better.
+  Match(Dist^2): Raw deviation from Target. Lower is better (0=Perfect).
+  Penalty: Repetition decay. Higher means recently eaten.
+
+Initial Spice Weight: 0.8000
+
+--- DAY 1: 2025-12-18 ---
+  [Breakfast] Target: Cal=643, Spice=25
+    #1 [SELECTED]: Slow Cooker Chicken Taco Soup
+       Sim: 0.0214 | Match(Dist^2): 45.7407 | Penalty: 0.0000
+    #2 [REJECTED]: Vegan Taco bowls with Cilantro Lime Cauliflower Rice
+       Sim: 0.0203 | Match(Dist^2): 48.3303 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Pork Fried Rice
+       Sim: 0.0174 | Match(Dist^2): 56.5958 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=497, Spice=32
+    #1 [SELECTED]: Green Thai Curry with Beef
+       Sim: 0.0192 | Match(Dist^2): 51.0695 | Penalty: 0.0000
+    #2 [REJECTED]: Country Breakfast: Tofu and Veggie Scramble With Home Fries
+       Sim: 0.0182 | Match(Dist^2): 53.9119 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Meyer Lemon Ricotta Pancakes with Blackberry Compote
+       Sim: 0.0177 | Match(Dist^2): 55.4253 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=339, Spice=41
+    #1 [SELECTED]: Ratatouille
+       Sim: 0.0148 | Match(Dist^2): 66.4562 | Penalty: 0.0000
+    #2 [REJECTED]: Golden Beet Panzanella
+       Sim: 0.0144 | Match(Dist^2): 68.2896 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Chinese Style Chicken and Noodle Stir Fry
+       Sim: 0.0138 | Match(Dist^2): 71.4412 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 2: 2025-12-19 ---
+  [Breakfast] Target: Cal=643, Spice=33
+    #1 [SELECTED]: Finger Foods: Frittata Muffins
+       Sim: 0.0194 | Match(Dist^2): 50.5516 | Penalty: 0.0000
+    #2 [REJECTED]: Slow Cooker Beef Stew
+       Sim: 0.0187 | Match(Dist^2): 52.5795 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Pork Fried Rice
+       Sim: 0.0170 | Match(Dist^2): 57.9034 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=515, Spice=26
+    #1 [SELECTED]: Country Breakfast: Tofu and Veggie Scramble With Home Fries
+       Sim: 0.0175 | Match(Dist^2): 55.9899 | Penalty: 0.0000
+    #2 [REJECTED]: Veggie Lasagna Rolls with Peppery Pecorino Marinara
+       Sim: 0.0168 | Match(Dist^2): 58.6135 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Chinese Chicken Salad With Chipotle Dressing
+       Sim: 0.0158 | Match(Dist^2): 62.3200 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=351, Spice=33
+    #1 [SELECTED]: Golden Beet Panzanella
+       Sim: 0.0140 | Match(Dist^2): 70.6446 | Penalty: 0.0000
+    #2 [REJECTED]: Chinese Style Chicken and Noodle Stir Fry
+       Sim: 0.0133 | Match(Dist^2): 74.3850 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Greek Marinade with Yogurt
+       Sim: 0.0132 | Match(Dist^2): 74.5422 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 3: 2025-12-20 ---
+  [Breakfast] Target: Cal=643, Spice=27
+    #1 [SELECTED]: Pork Fried Rice
+       Sim: 0.0160 | Match(Dist^2): 61.5133 | Penalty: 0.0000
+    #2 [REJECTED]: Vegan Taco bowls with Cilantro Lime Cauliflower Rice
+       Sim: 0.0154 | Match(Dist^2): 63.7927 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Ethiopian Lentil Curry
+       Sim: 0.0145 | Match(Dist^2): 67.7714 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=561, Spice=28
+    #1 [SELECTED]: Easy Tabouleh
+       Sim: 0.0148 | Match(Dist^2): 66.6686 | Penalty: 0.0000
+    #2 [REJECTED]: Meyer Lemon Ricotta Pancakes with Blackberry Compote
+       Sim: 0.0147 | Match(Dist^2): 66.9395 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Cheesy Frittata with Spinach, Asparagus and Mushrooms
+       Sim: 0.0144 | Match(Dist^2): 68.6489 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=395, Spice=23
+    #1 [SELECTED]: Greek Marinade with Yogurt
+       Sim: 0.0131 | Match(Dist^2): 75.1795 | Penalty: 0.0000
+    #2 [REJECTED]: Mixed Paella
+       Sim: 0.0130 | Match(Dist^2): 75.6468 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Fallen Chocolate Cakes With Spanish Paprika
+       Sim: 0.0129 | Match(Dist^2): 76.3581 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 4: 2025-12-21 ---
+  [Breakfast] Target: Cal=644, Spice=18
+    #1 [SELECTED]: Vegan Taco bowls with Cilantro Lime Cauliflower Rice
+       Sim: 0.0165 | Match(Dist^2): 59.6269 | Penalty: 0.0000
+    #2 [REJECTED]: Slow Cooker Beef Stew
+       Sim: 0.0159 | Match(Dist^2): 61.7228 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Ethiopian Lentil Curry
+       Sim: 0.0149 | Match(Dist^2): 66.2611 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=574, Spice=24
+    #1 [SELECTED]: Meyer Lemon Ricotta Pancakes with Blackberry Compote
+       Sim: 0.0160 | Match(Dist^2): 61.5729 | Penalty: 0.0000
+    #2 [REJECTED]: Cheesy Frittata with Spinach, Asparagus and Mushrooms
+       Sim: 0.0156 | Match(Dist^2): 63.1630 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Easy Granola with Goji berries, nuts and seeds
+       Sim: 0.0151 | Match(Dist^2): 65.4005 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=409, Spice=18
+    #1 [SELECTED]: Mixed Paella
+       Sim: 0.0130 | Match(Dist^2): 75.9629 | Penalty: 0.0000
+    #2 [REJECTED]: Fallen Chocolate Cakes With Spanish Paprika
+       Sim: 0.0129 | Match(Dist^2): 76.7764 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Korean Perilla Pesto
+       Sim: 0.0125 | Match(Dist^2): 79.3108 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 5: 2025-12-22 ---
+  [Breakfast] Target: Cal=644, Spice=16
+    #1 [SELECTED]: Ethiopian Lentil Curry
+       Sim: 0.0149 | Match(Dist^2): 66.2267 | Penalty: 0.0000
+    #2 [REJECTED]: Slow Cooker Beef Stew
+       Sim: 0.0142 | Match(Dist^2): 69.6308 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Soba Noodle In Kombu Dashi With Teriyaki Salmon
+       Sim: 0.0139 | Match(Dist^2): 71.0272 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=566, Spice=16
+    #1 [SELECTED]: Veggie Lasagna Rolls with Peppery Pecorino Marinara
+       Sim: 0.0155 | Match(Dist^2): 63.4665 | Penalty: 0.0000
+    #2 [REJECTED]: Cheesy Frittata with Spinach, Asparagus and Mushrooms
+       Sim: 0.0147 | Match(Dist^2): 67.2012 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Easy Granola with Goji berries, nuts and seeds
+       Sim: 0.0142 | Match(Dist^2): 69.6261 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=388, Spice=16
+    #1 [SELECTED]: Korean Perilla Pesto
+       Sim: 0.0130 | Match(Dist^2): 75.7632 | Penalty: 0.0000
+    #2 [REJECTED]: Japanese Mabo Tofu With Eggplant
+       Sim: 0.0130 | Match(Dist^2): 75.9451 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Korean-Style Hamburg Steak w Tomato Gravy
+       Sim: 0.0130 | Match(Dist^2): 75.9582 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 6: 2025-12-23 ---
+  [Breakfast] Target: Cal=644, Spice=18
+    #1 [SELECTED]: Slow Cooker Beef Stew
+       Sim: 0.0155 | Match(Dist^2): 63.4798 | Penalty: 0.0000
+    #2 [REJECTED]: Soba Noodle In Kombu Dashi With Teriyaki Salmon
+       Sim: 0.0139 | Match(Dist^2): 70.7262 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Broccolini Quinoa Pilaf
+       Sim: 0.0137 | Match(Dist^2): 72.1823 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=583, Spice=18
+    #1 [SELECTED]: Chinese Chicken Salad With Chipotle Dressing
+       Sim: 0.0137 | Match(Dist^2): 71.7480 | Penalty: 0.0000
+    #2 [REJECTED]: Classic French Mussels
+       Sim: 0.0136 | Match(Dist^2): 72.4821 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Thai "Chicken" Wraps
+       Sim: 0.0134 | Match(Dist^2): 73.5053 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=409, Spice=18
+    #1 [SELECTED]: Japanese Mabo Tofu With Eggplant
+       Sim: 0.0124 | Match(Dist^2): 79.8142 | Penalty: 0.0000
+    #2 [REJECTED]: Chicken and Miso Ramen Noodle Soup
+       Sim: 0.0119 | Match(Dist^2): 82.8648 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Winter Fattoush Salad
+       Sim: 0.0118 | Match(Dist^2): 83.5079 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 7: 2025-12-24 ---
+  [Breakfast] Target: Cal=646, Spice=29
+    #1 [SELECTED]: Broccolini Quinoa Pilaf
+       Sim: 0.0130 | Match(Dist^2): 75.6431 | Penalty: 0.0000
+    #2 [REJECTED]: Osso Buco
+       Sim: 0.0130 | Match(Dist^2): 75.9596 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Thai Green Mango Salad
+       Sim: 0.0129 | Match(Dist^2): 76.4703 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=583, Spice=29
+    #1 [SELECTED]: Cheesy Frittata with Spinach, Asparagus and Mushrooms
+       Sim: 0.0146 | Match(Dist^2): 67.4390 | Penalty: 0.0000
+    #2 [REJECTED]: Classic French Mussels
+       Sim: 0.0141 | Match(Dist^2): 69.7278 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Thai "Chicken" Wraps
+       Sim: 0.0141 | Match(Dist^2): 69.7807 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=413, Spice=18
+    #1 [SELECTED]: Easy Cheesy Pizza Casserole
+       Sim: 0.0125 | Match(Dist^2): 79.0075 | Penalty: 0.0000
+    #2 [REJECTED]: Winter Fattoush Salad
+       Sim: 0.0117 | Match(Dist^2): 84.6473 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Fallen Chocolate Cakes With Spanish Paprika
+       Sim: 0.0115 | Match(Dist^2): 85.7678 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 8: 2025-12-25 ---
+  [Breakfast] Target: Cal=646, Spice=16
+    #1 [SELECTED]: Greek Chicken Sheet Pan Dinner with Green Beans and Feta
+       Sim: 0.0127 | Match(Dist^2): 77.9830 | Penalty: 0.0000
+    #2 [REJECTED]: Cranberry Pecan Greek Yogurt Chicken Salad
+       Sim: 0.0126 | Match(Dist^2): 78.6006 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Thai Green Mango Salad
+       Sim: 0.0122 | Match(Dist^2): 80.7279 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=628, Spice=16
+    #1 [SELECTED]: Thai "Chicken" Wraps
+       Sim: 0.0129 | Match(Dist^2): 76.2606 | Penalty: 0.0000
+    #2 [REJECTED]: Classic French Mussels
+       Sim: 0.0129 | Match(Dist^2): 76.3731 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Easy Granola with Goji berries, nuts and seeds
+       Sim: 0.0128 | Match(Dist^2): 77.2680 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=513, Spice=16
+    #1 [SELECTED]: Fallen Chocolate Cakes With Spanish Paprika
+       Sim: 0.0121 | Match(Dist^2): 81.7466 | Penalty: 0.0000
+    #2 [REJECTED]: Winter Fattoush Salad
+       Sim: 0.0121 | Match(Dist^2): 81.8802 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Peanut Butter And Chocolate Oatmeal
+       Sim: 0.0117 | Match(Dist^2): 84.3118 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 9: 2025-12-26 ---
+  [Breakfast] Target: Cal=666, Spice=16
+    #1 [SELECTED]: Chicken Fajita Stuffed Bell Pepper
+       Sim: 0.0128 | Match(Dist^2): 77.3836 | Penalty: 0.0000
+    #2 [REJECTED]: Easy Vegetable Beef Soup
+       Sim: 0.0123 | Match(Dist^2): 80.6271 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Plantain Pizza
+       Sim: 0.0121 | Match(Dist^2): 81.3956 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=628, Spice=16
+    #1 [SELECTED]: Easy Granola with Goji berries, nuts and seeds
+       Sim: 0.0145 | Match(Dist^2): 67.9006 | Penalty: 0.0000
+    #2 [REJECTED]: Roasted Plum Oatmeal
+       Sim: 0.0137 | Match(Dist^2): 71.8915 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Classic French Mussels
+       Sim: 0.0136 | Match(Dist^2): 72.3311 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=513, Spice=16
+    #1 [SELECTED]: Winter Fattoush Salad
+       Sim: 0.0122 | Match(Dist^2): 81.2045 | Penalty: 0.0000
+    #2 [REJECTED]: Chinese Style Chicken and Noodle Stir Fry
+       Sim: 0.0119 | Match(Dist^2): 82.9767 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Peanut Butter And Chocolate Oatmeal
+       Sim: 0.0118 | Match(Dist^2): 83.7018 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 10: 2025-12-27 ---
+  [Breakfast] Target: Cal=666, Spice=16
+    #1 [SELECTED]: Plantain Pizza
+       Sim: 0.0132 | Match(Dist^2): 74.7655 | Penalty: 0.0000
+    #2 [REJECTED]: Osso Buco
+       Sim: 0.0128 | Match(Dist^2): 77.1929 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Soba Noodle In Kombu Dashi With Teriyaki Salmon
+       Sim: 0.0125 | Match(Dist^2): 78.7033 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=635, Spice=16
+    #1 [SELECTED]: Mango Fried Rice
+       Sim: 0.0136 | Match(Dist^2): 72.6438 | Penalty: 0.0000
+    #2 [REJECTED]: Classic French Mussels
+       Sim: 0.0134 | Match(Dist^2): 73.5021 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Roasted Plum Oatmeal
+       Sim: 0.0125 | Match(Dist^2): 78.6971 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=513, Spice=16
+    #1 [SELECTED]: Peanut Butter And Chocolate Oatmeal
+       Sim: 0.0119 | Match(Dist^2): 82.8689 | Penalty: 0.0000
+    #2 [REJECTED]: Korean-Style Hamburg Steak w Tomato Gravy
+       Sim: 0.0118 | Match(Dist^2): 83.4471 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Curry Mussels
+       Sim: 0.0113 | Match(Dist^2): 87.2136 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 11: 2025-12-28 ---
+  [Breakfast] Target: Cal=666, Spice=16
+    #1 [SELECTED]: Soba Noodle In Kombu Dashi With Teriyaki Salmon
+       Sim: 0.0128 | Match(Dist^2): 76.9199 | Penalty: 0.0000
+    #2 [REJECTED]: Chicken Teriyaki with Soba Noodles
+       Sim: 0.0126 | Match(Dist^2): 78.4559 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Korean Chicken Stew
+       Sim: 0.0125 | Match(Dist^2): 78.7338 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=635, Spice=16
+    #1 [SELECTED]: Roasted Plum Oatmeal
+       Sim: 0.0137 | Match(Dist^2): 71.8345 | Penalty: 0.0000
+    #2 [REJECTED]: Classic French Mussels
+       Sim: 0.0136 | Match(Dist^2): 72.3355 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Classic Greek Moussaka
+       Sim: 0.0130 | Match(Dist^2): 75.8224 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=513, Spice=16
+    #1 [SELECTED]: Korean-Style Hamburg Steak w Tomato Gravy
+       Sim: 0.0126 | Match(Dist^2): 78.6756 | Penalty: 0.0000
+    #2 [REJECTED]: Curry Mussels
+       Sim: 0.0119 | Match(Dist^2): 83.0269 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Lamb Chops Masala
+       Sim: 0.0118 | Match(Dist^2): 83.9149 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 12: 2025-12-29 ---
+  [Breakfast] Target: Cal=666, Spice=16
+    #1 [SELECTED]: Spicy Black-Eyed Pea Curry with Swiss Chard and Roasted Eggplant
+       Sim: 0.0132 | Match(Dist^2): 74.5390 | Penalty: 0.0000
+    #2 [REJECTED]: Cranberry Pecan Greek Yogurt Chicken Salad
+       Sim: 0.0132 | Match(Dist^2): 74.7097 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Authentic Jamaican Curry Chicken
+       Sim: 0.0130 | Match(Dist^2): 76.0706 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=635, Spice=16
+    #1 [SELECTED]: Classic French Mussels
+       Sim: 0.0141 | Match(Dist^2): 69.7845 | Penalty: 0.0000
+    #2 [REJECTED]: Classic Greek Moussaka
+       Sim: 0.0138 | Match(Dist^2): 71.7270 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Spanakopita (Greek Spinach Pie)
+       Sim: 0.0135 | Match(Dist^2): 72.8883 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=476, Spice=16
+    #1 [SELECTED]: Leek Flan
+       Sim: 0.0126 | Match(Dist^2): 78.1374 | Penalty: 0.0000
+    #2 [REJECTED]: Flank Steak with Herbed Salsa
+       Sim: 0.0126 | Match(Dist^2): 78.5179 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Chinese Style Chicken and Noodle Stir Fry
+       Sim: 0.0125 | Match(Dist^2): 79.0254 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 13: 2025-12-30 ---
+  [Breakfast] Target: Cal=656, Spice=16
+    #1 [SELECTED]: Italian String Beans With Anchovies and Breadcrumbs
+       Sim: 0.0141 | Match(Dist^2): 69.7853 | Penalty: 0.0000
+    #2 [REJECTED]: Cranberry Pecan Greek Yogurt Chicken Salad
+       Sim: 0.0140 | Match(Dist^2): 70.3868 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Layered Greek Salad
+       Sim: 0.0138 | Match(Dist^2): 71.4142 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=620, Spice=16
+    #1 [SELECTED]: Spanakopita (Greek Spinach Pie)
+       Sim: 0.0162 | Match(Dist^2): 60.8465 | Penalty: 0.0000
+    #2 [REJECTED]: Classic Greek Moussaka
+       Sim: 0.0157 | Match(Dist^2): 62.5877 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Frittata
+       Sim: 0.0148 | Match(Dist^2): 66.3888 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=519, Spice=16
+    #1 [SELECTED]: Vegan Cacao Crunch Granola
+       Sim: 0.0144 | Match(Dist^2): 68.4588 | Penalty: 0.0000
+    #2 [REJECTED]: Homemade Guacamole
+       Sim: 0.0142 | Match(Dist^2): 69.2821 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Flank Steak with Herbed Salsa
+       Sim: 0.0141 | Match(Dist^2): 69.8746 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 14: 2025-12-31 ---
+  [Breakfast] Target: Cal=669, Spice=16
+    #1 [SELECTED]: Thai Green Mango Salad
+       Sim: 0.0153 | Match(Dist^2): 64.2462 | Penalty: 0.0000
+    #2 [REJECTED]: Skinny Veggie Fried Rice
+       Sim: 0.0153 | Match(Dist^2): 64.3387 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Thai-Style Mussels
+       Sim: 0.0149 | Match(Dist^2): 66.0567 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=620, Spice=16
+    #1 [SELECTED]: Chinese Scallion Pancakes
+       Sim: 0.0149 | Match(Dist^2): 66.0125 | Penalty: 0.0000
+    #2 [REJECTED]: Clams With Spanish Sausage
+       Sim: 0.0144 | Match(Dist^2): 68.2933 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Indian-Style Pumpkin Side Dish
+       Sim: 0.0144 | Match(Dist^2): 68.3385 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=476, Spice=16
+    #1 [SELECTED]: Homemade Guacamole
+       Sim: 0.0146 | Match(Dist^2): 67.2927 | Penalty: 0.0000
+    #2 [REJECTED]: Flank Steak with Herbed Salsa
+       Sim: 0.0145 | Match(Dist^2): 67.9906 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Teriyaki Flank Steak Sandwich With Napa Cabbage, Red Bell Peppers & Carrots
+       Sim: 0.0135 | Match(Dist^2): 73.2161 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 15: 2026-01-01 ---
+  [Breakfast] Target: Cal=653, Spice=16
+    #1 [SELECTED]: Roasted Cauliflower Detox Bowl with Tahini Sauce
+       Sim: 0.0156 | Match(Dist^2): 62.9914 | Penalty: 0.0000
+    #2 [REJECTED]: Easy Vegetable Beef Soup
+       Sim: 0.0152 | Match(Dist^2): 64.7707 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Home made organic maple granola with fresh fruit
+       Sim: 0.0146 | Match(Dist^2): 67.6121 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=614, Spice=16
+    #1 [SELECTED]: Clams With Spanish Sausage
+       Sim: 0.0153 | Match(Dist^2): 64.4229 | Penalty: 0.0000
+    #2 [REJECTED]: Indian-Style Pumpkin Side Dish
+       Sim: 0.0151 | Match(Dist^2): 65.2055 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Classic Greek Moussaka
+       Sim: 0.0144 | Match(Dist^2): 68.4412 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=459, Spice=16
+    #1 [SELECTED]: Curry Mussels
+       Sim: 0.0141 | Match(Dist^2): 69.9626 | Penalty: 0.0000
+    #2 [REJECTED]: Teriyaki Flank Steak Sandwich With Napa Cabbage, Red Bell Peppers & Carrots
+       Sim: 0.0140 | Match(Dist^2): 70.5766 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Julia Child's Coq au Vin
+       Sim: 0.0132 | Match(Dist^2): 74.8295 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 16: 2026-01-02 ---
+  [Breakfast] Target: Cal=652, Spice=16
+    #1 [SELECTED]: Easy Vegetable Beef Soup
+       Sim: 0.0146 | Match(Dist^2): 67.5362 | Penalty: 0.0000
+    #2 [REJECTED]: Layered Greek Salad
+       Sim: 0.0145 | Match(Dist^2): 67.7690 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Korean Chicken Stew
+       Sim: 0.0143 | Match(Dist^2): 68.9055 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=612, Spice=16
+    #1 [SELECTED]: Classic Greek Moussaka
+       Sim: 0.0153 | Match(Dist^2): 64.3383 | Penalty: 0.0000
+    #2 [REJECTED]: Roasted Ratatouille Gratin
+       Sim: 0.0148 | Match(Dist^2): 66.3999 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Bibimbab (Korean Rice w Vegetables & Beef)
+       Sim: 0.0144 | Match(Dist^2): 68.6521 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=459, Spice=16
+    #1 [SELECTED]: Teriyaki Flank Steak Sandwich With Napa Cabbage, Red Bell Peppers & Carrots
+       Sim: 0.0143 | Match(Dist^2): 69.0246 | Penalty: 0.0000
+    #2 [REJECTED]: Julia Child's Coq au Vin
+       Sim: 0.0136 | Match(Dist^2): 72.3225 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Spicy Korean Bbq Pork
+       Sim: 0.0135 | Match(Dist^2): 73.2810 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 17: 2026-01-03 ---
+  [Breakfast] Target: Cal=652, Spice=16
+    #1 [SELECTED]: Skinny Veggie Fried Rice
+       Sim: 0.0152 | Match(Dist^2): 64.6302 | Penalty: 0.0000
+    #2 [REJECTED]: Korean Chicken Stew
+       Sim: 0.0144 | Match(Dist^2): 68.5050 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Greek-Style Baked Fish: Fresh, Simple, and Delicious
+       Sim: 0.0144 | Match(Dist^2): 68.5868 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=612, Spice=16
+    #1 [SELECTED]: Roasted Ratatouille Gratin
+       Sim: 0.0151 | Match(Dist^2): 65.1460 | Penalty: 0.0000
+    #2 [REJECTED]: Bibimbab (Korean Rice w Vegetables & Beef)
+       Sim: 0.0145 | Match(Dist^2): 68.0761 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Smoky Black Bean Soup With Sweet Potato & Kale
+       Sim: 0.0144 | Match(Dist^2): 68.4730 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=459, Spice=16
+    #1 [SELECTED]: Flank Steak with Herbed Salsa
+       Sim: 0.0140 | Match(Dist^2): 70.6829 | Penalty: 0.0000
+    #2 [REJECTED]: Spicy Korean Bbq Pork
+       Sim: 0.0136 | Match(Dist^2): 72.5410 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Cherry Coconut Milk Smoothie
+       Sim: 0.0134 | Match(Dist^2): 73.7638 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 18: 2026-01-04 ---
+  [Breakfast] Target: Cal=648, Spice=16
+    #1 [SELECTED]: Home made organic maple granola with fresh fruit
+       Sim: 0.0155 | Match(Dist^2): 63.7186 | Penalty: 0.0000
+    #2 [REJECTED]: Thai-Style Mussels
+       Sim: 0.0148 | Match(Dist^2): 66.5982 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Korean Chicken Stew
+       Sim: 0.0146 | Match(Dist^2): 67.7076 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=596, Spice=16
+    #1 [SELECTED]: Indian-Style Pumpkin Side Dish
+       Sim: 0.0151 | Match(Dist^2): 65.2726 | Penalty: 0.0000
+    #2 [REJECTED]: Vanilla and Lime Flan By Esperanza Platas Alvarez (Planet Food Mexico)
+       Sim: 0.0148 | Match(Dist^2): 66.3490 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Bibimbab (Korean Rice w Vegetables & Beef)
+       Sim: 0.0146 | Match(Dist^2): 67.3699 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=383, Spice=16
+    #1 [SELECTED]: Thai Coconut Beetroot Soup
+       Sim: 0.0140 | Match(Dist^2): 70.6023 | Penalty: 0.0000
+    #2 [REJECTED]: Spanish Gazpacho Soup In The Raw With Broiled "Cheese" Toast
+       Sim: 0.0139 | Match(Dist^2): 70.9449 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Spicy Korean Bbq Pork
+       Sim: 0.0139 | Match(Dist^2): 70.9802 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 19: 2026-01-05 ---
+  [Breakfast] Target: Cal=644, Spice=16
+    #1 [SELECTED]: Slow Cooker Chicken Taco Soup
+       Sim: 0.0149 | Match(Dist^2): 48.4433 | Penalty: 0.3799
+    #2 [REJECTED]: Spanish Tortilla
+       Sim: 0.0149 | Match(Dist^2): 66.1861 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Korean Chicken Stew
+       Sim: 0.0147 | Match(Dist^2): 67.0710 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=562, Spice=16
+    #1 [SELECTED]: Vanilla and Lime Flan By Esperanza Platas Alvarez (Planet Food Mexico)
+       Sim: 0.0157 | Match(Dist^2): 62.8013 | Penalty: 0.0000
+    #2 [REJECTED]: Roma Tomato Bruschetta
+       Sim: 0.0152 | Match(Dist^2): 64.8033 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Bibimbab (Korean Rice w Vegetables & Beef)
+       Sim: 0.0151 | Match(Dist^2): 65.2549 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=388, Spice=16
+    #1 [SELECTED]: Golden Beet Panzanella
+       Sim: 0.0146 | Match(Dist^2): 46.0916 | Penalty: 0.4678
+    #2 [REJECTED]: Great Greek Salad
+       Sim: 0.0143 | Match(Dist^2): 69.0413 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Spicy Korean Bbq Pork
+       Sim: 0.0141 | Match(Dist^2): 69.7861 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 20: 2026-01-06 ---
+  [Breakfast] Target: Cal=646, Spice=16
+    #1 [SELECTED]: Layered Greek Salad
+       Sim: 0.0150 | Match(Dist^2): 65.7855 | Penalty: 0.0000
+    #2 [REJECTED]: Korean Chicken Stew
+       Sim: 0.0147 | Match(Dist^2): 67.1027 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Kimchi/Kimchee/Gimchi (Korean Fermented Spicy Cabbage)
+       Sim: 0.0146 | Match(Dist^2): 67.3705 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=566, Spice=16
+    #1 [SELECTED]: Smoky Black Bean Soup With Sweet Potato & Kale
+       Sim: 0.0157 | Match(Dist^2): 62.6439 | Penalty: 0.0000
+    #2 [REJECTED]: Frittata
+       Sim: 0.0156 | Match(Dist^2): 62.9941 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Easy Tabouleh
+       Sim: 0.0155 | Match(Dist^2): 44.0275 | Penalty: 0.4514 [Poor Target Match]
+
+  [Dinner] Target: Cal=388, Spice=37
+    #1 [SELECTED]: Spicy Korean Bbq Pork
+       Sim: 0.0144 | Match(Dist^2): 68.6533 | Penalty: 0.0000
+    #2 [REJECTED]: Chinese Style Chicken and Noodle Stir Fry
+       Sim: 0.0142 | Match(Dist^2): 69.5264 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Autumn Fried Rice with Buffalo Nuts®
+       Sim: 0.0140 | Match(Dist^2): 70.2165 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 21: 2026-01-07 ---
+  [Breakfast] Target: Cal=644, Spice=45
+    #1 [SELECTED]: Thai-Style Mussels
+       Sim: 0.0153 | Match(Dist^2): 64.2687 | Penalty: 0.0000
+    #2 [REJECTED]: Greek-Style Baked Fish: Fresh, Simple, and Delicious
+       Sim: 0.0150 | Match(Dist^2): 65.8147 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Authentic Jamaican Curry Chicken
+       Sim: 0.0142 | Match(Dist^2): 69.3580 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=566, Spice=45
+    #1 [SELECTED]: Easy Tabouleh
+       Sim: 0.0160 | Match(Dist^2): 44.6557 | Penalty: 0.3913
+    #2 [REJECTED]: Chinese Style Stewed Meatballs
+       Sim: 0.0156 | Match(Dist^2): 63.1824 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Japanese Clear Soup
+       Sim: 0.0151 | Match(Dist^2): 65.2227 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=388, Spice=37
+    #1 [SELECTED]: Chinese Style Chicken and Noodle Stir Fry
+       Sim: 0.0147 | Match(Dist^2): 67.0590 | Penalty: 0.0000
+    #2 [REJECTED]: Ratatouille
+       Sim: 0.0146 | Match(Dist^2): 52.7629 | Penalty: 0.3048 [Poor Target Match]
+    #3 [REJECTED]: Autumn Fried Rice with Buffalo Nuts®
+       Sim: 0.0145 | Match(Dist^2): 68.1518 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 22: 2026-01-08 ---
+  [Breakfast] Target: Cal=644, Spice=44
+    #1 [SELECTED]: Greek-Style Baked Fish: Fresh, Simple, and Delicious
+       Sim: 0.0150 | Match(Dist^2): 65.6050 | Penalty: 0.0000
+    #2 [REJECTED]: Vegan Taco bowls with Cilantro Lime Cauliflower Rice
+       Sim: 0.0148 | Match(Dist^2): 48.9502 | Penalty: 0.3799 [Poor Target Match]
+    #3 [REJECTED]: Authentic Jamaican Curry Chicken
+       Sim: 0.0147 | Match(Dist^2): 66.8540 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=566, Spice=45
+    #1 [SELECTED]: Frittata
+       Sim: 0.0157 | Match(Dist^2): 62.7076 | Penalty: 0.0000
+    #2 [REJECTED]: Japanese Clear Soup
+       Sim: 0.0152 | Match(Dist^2): 64.8162 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Green Thai Curry with Beef
+       Sim: 0.0148 | Match(Dist^2): 54.0148 | Penalty: 0.2549 [Poor Target Match]
+
+  [Dinner] Target: Cal=409, Spice=45
+    #1 [SELECTED]: Ratatouille
+       Sim: 0.0159 | Match(Dist^2): 50.0357 | Penalty: 0.2642
+    #2 [REJECTED]: Rice and Peas with Coconut Curry Mackerel
+       Sim: 0.0153 | Match(Dist^2): 64.2803 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Julia Child's Coq au Vin
+       Sim: 0.0152 | Match(Dist^2): 64.6785 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 23: 2026-01-09 ---
+  [Breakfast] Target: Cal=646, Spice=44
+    #1 [SELECTED]: Vegan Taco bowls with Cilantro Lime Cauliflower Rice
+       Sim: 0.0173 | Match(Dist^2): 43.3413 | Penalty: 0.3293
+    #2 [REJECTED]: Ethiopian Lentil Curry
+       Sim: 0.0157 | Match(Dist^2): 45.8614 | Penalty: 0.3799 [Poor Target Match]
+    #3 [REJECTED]: Authentic Jamaican Curry Chicken
+       Sim: 0.0157 | Match(Dist^2): 62.6884 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=586, Spice=44
+    #1 [SELECTED]: Green Thai Curry with Beef
+       Sim: 0.0170 | Match(Dist^2): 48.3453 | Penalty: 0.2210
+    #2 [REJECTED]: Mint, Fennel and Garlic Naan
+       Sim: 0.0159 | Match(Dist^2): 61.8700 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Japanese Clear Soup
+       Sim: 0.0158 | Match(Dist^2): 62.3620 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=409, Spice=45
+    #1 [SELECTED]: Rice and Peas with Coconut Curry Mackerel
+       Sim: 0.0148 | Match(Dist^2): 66.7793 | Penalty: 0.0000
+    #2 [REJECTED]: Spanish Gazpacho Soup In The Raw With Broiled "Cheese" Toast
+       Sim: 0.0145 | Match(Dist^2): 67.9300 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Great Greek Salad
+       Sim: 0.0144 | Match(Dist^2): 68.6212 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 24: 2026-01-10 ---
+  [Breakfast] Target: Cal=646, Spice=48
+    #1 [SELECTED]: Chicken Teriyaki with Soba Noodles
+       Sim: 0.0150 | Match(Dist^2): 65.8811 | Penalty: 0.0000
+    #2 [REJECTED]: Cranberry Pecan Greek Yogurt Chicken Salad
+       Sim: 0.0148 | Match(Dist^2): 66.5984 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Spanish Tortilla
+       Sim: 0.0145 | Match(Dist^2): 67.9143 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=583, Spice=44
+    #1 [SELECTED]: Bread Omlette
+       Sim: 0.0160 | Match(Dist^2): 57.0479 | Penalty: 0.0933
+    #2 [REJECTED]: Country Breakfast: Tofu and Veggie Scramble With Home Fries
+       Sim: 0.0150 | Match(Dist^2): 54.7726 | Penalty: 0.2210 [Poor Target Match]
+    #3 [REJECTED]: Bibimbab (Korean Rice w Vegetables & Beef)
+       Sim: 0.0143 | Match(Dist^2): 68.8310 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=409, Spice=44
+    #1 [SELECTED]: Spanish Gazpacho Soup In The Raw With Broiled "Cheese" Toast
+       Sim: 0.0130 | Match(Dist^2): 75.8257 | Penalty: 0.0000
+    #2 [REJECTED]: Great Greek Salad
+       Sim: 0.0128 | Match(Dist^2): 77.4197 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Red Kidney Bean Jambalaya
+       Sim: 0.0127 | Match(Dist^2): 77.8648 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 25: 2026-01-11 ---
+  [Breakfast] Target: Cal=646, Spice=35
+    #1 [SELECTED]: Cranberry Pecan Greek Yogurt Chicken Salad
+       Sim: 0.0151 | Match(Dist^2): 65.1902 | Penalty: 0.0000
+    #2 [REJECTED]: Osso Buco
+       Sim: 0.0147 | Match(Dist^2): 67.0990 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Korean Chicken Stew
+       Sim: 0.0135 | Match(Dist^2): 73.0318 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=575, Spice=35
+    #1 [SELECTED]: Country Breakfast: Tofu and Veggie Scramble With Home Fries
+       Sim: 0.0149 | Match(Dist^2): 56.7580 | Penalty: 0.1916
+    #2 [REJECTED]: Veggie Lasagna Rolls with Peppery Pecorino Marinara
+       Sim: 0.0142 | Match(Dist^2): 54.4997 | Penalty: 0.2941 [Poor Target Match]
+    #3 [REJECTED]: Pumpkin gnocchi with basil and Parmesan
+       Sim: 0.0139 | Match(Dist^2): 70.7011 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=409, Spice=35
+    #1 [SELECTED]: Italian Seafood Stew
+       Sim: 0.0128 | Match(Dist^2): 77.2825 | Penalty: 0.0000
+    #2 [REJECTED]: Red Kidney Bean Jambalaya
+       Sim: 0.0125 | Match(Dist^2): 79.2952 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Autumn Fried Rice with Buffalo Nuts®
+       Sim: 0.0124 | Match(Dist^2): 79.5266 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 26: 2026-01-12 ---
+  [Breakfast] Target: Cal=646, Spice=21
+    #1 [SELECTED]: Finger Foods: Frittata Muffins
+       Sim: 0.0141 | Match(Dist^2): 61.5453 | Penalty: 0.1612
+    #2 [REJECTED]: Slow Cooker Beef Stew
+       Sim: 0.0135 | Match(Dist^2): 58.0264 | Penalty: 0.2855 [Poor Target Match]
+    #3 [REJECTED]: Pork Fried Rice
+       Sim: 0.0130 | Match(Dist^2): 65.0847 | Penalty: 0.1860 [Poor Target Match]
+
+  [Lunch] Target: Cal=616, Spice=18
+    #1 [SELECTED]: Thai Stir-Fry Chicken With Cashew Nuts
+       Sim: 0.0131 | Match(Dist^2): 75.3296 | Penalty: 0.0000
+    #2 [REJECTED]: Vegetarian Ratatouille
+       Sim: 0.0125 | Match(Dist^2): 78.8276 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Bibimbab (Korean Rice w Vegetables & Beef)
+       Sim: 0.0123 | Match(Dist^2): 80.1606 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=465, Spice=21
+    #1 [SELECTED]: Gluten Free Dairy Free Sugar Free Chinese Chicken Salad
+       Sim: 0.0120 | Match(Dist^2): 82.2637 | Penalty: 0.0000
+    #2 [REJECTED]: Lamb Chops Masala
+       Sim: 0.0117 | Match(Dist^2): 84.3014 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Julia Child's Ratatouille
+       Sim: 0.0117 | Match(Dist^2): 84.5615 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 27: 2026-01-13 ---
+  [Breakfast] Target: Cal=653, Spice=33
+    #1 [SELECTED]: Korean Beef Rice Bowl
+       Sim: 0.0130 | Match(Dist^2): 76.1477 | Penalty: 0.0000
+    #2 [REJECTED]: Osso Buco
+       Sim: 0.0130 | Match(Dist^2): 76.2115 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Slow Cooker Beef Stew
+       Sim: 0.0129 | Match(Dist^2): 62.6461 | Penalty: 0.2475 [Poor Target Match]
+
+  [Lunch] Target: Cal=616, Spice=35
+    #1 [SELECTED]: Vegetarian Ratatouille
+       Sim: 0.0133 | Match(Dist^2): 74.0771 | Penalty: 0.0000
+    #2 [REJECTED]: Meyer Lemon Ricotta Pancakes with Blackberry Compote
+       Sim: 0.0129 | Match(Dist^2): 65.4472 | Penalty: 0.1916 [Poor Target Match]
+    #3 [REJECTED]: Mint, Fennel and Garlic Naan
+       Sim: 0.0128 | Match(Dist^2): 76.8630 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=465, Spice=33
+    #1 [SELECTED]: Lamb Chops Masala
+       Sim: 0.0121 | Match(Dist^2): 81.4200 | Penalty: 0.0000
+    #2 [REJECTED]: Red Kidney Bean Jambalaya
+       Sim: 0.0118 | Match(Dist^2): 83.6097 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Assam Fish Curry
+       Sim: 0.0117 | Match(Dist^2): 84.7676 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 28: 2026-01-14 ---
+  [Breakfast] Target: Cal=653, Spice=33
+    #1 [SELECTED]: Slow Cooker Beef Stew
+       Sim: 0.0148 | Match(Dist^2): 55.7924 | Penalty: 0.2145
+    #2 [REJECTED]: Osso Buco
+       Sim: 0.0141 | Match(Dist^2): 69.9904 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Cheesy Chicken Enchilada Quinoa Casserole
+       Sim: 0.0122 | Match(Dist^2): 80.7627 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=615, Spice=21
+    #1 [SELECTED]: Veggie Lasagna Rolls with Peppery Pecorino Marinara
+       Sim: 0.0131 | Match(Dist^2): 64.7001 | Penalty: 0.1916
+    #2 [REJECTED]: Paella for Four; A Wonderful Spanish Mixed Seafood Stew
+       Sim: 0.0129 | Match(Dist^2): 76.6870 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Pork Shoulder Tacos with Chipotle Greek Yogurt and Coleslaw
+       Sim: 0.0125 | Match(Dist^2): 78.8360 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=465, Spice=21
+    #1 [SELECTED]: Chicken and Miso Ramen Noodle Soup
+       Sim: 0.0118 | Match(Dist^2): 83.6165 | Penalty: 0.0000
+    #2 [REJECTED]: Great Greek Salad
+       Sim: 0.0116 | Match(Dist^2): 84.8781 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Red Kidney Bean Jambalaya
+       Sim: 0.0115 | Match(Dist^2): 85.6230 | Penalty: 0.0000 [Poor Target Match]
+
+--- DAY 29: 2026-01-15 ---
+  [Breakfast] Target: Cal=653, Spice=21
+    #1 [SELECTED]: Pork Fried Rice
+       Sim: 0.0126 | Match(Dist^2): 71.2961 | Penalty: 0.1211
+    #2 [REJECTED]: Cheesy Chicken Enchilada Quinoa Casserole
+       Sim: 0.0122 | Match(Dist^2): 80.8390 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Osso Buco
+       Sim: 0.0122 | Match(Dist^2): 81.0061 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=615, Spice=21
+    #1 [SELECTED]: Meyer Lemon Ricotta Pancakes with Blackberry Compote
+       Sim: 0.0134 | Match(Dist^2): 65.5893 | Penalty: 0.1440
+    #2 [REJECTED]: Paella for Four; A Wonderful Spanish Mixed Seafood Stew
+       Sim: 0.0131 | Match(Dist^2): 75.2684 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Pork Shoulder Tacos with Chipotle Greek Yogurt and Coleslaw
+       Sim: 0.0129 | Match(Dist^2): 76.6137 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=465, Spice=21
+    #1 [SELECTED]: Great Greek Salad
+       Sim: 0.0120 | Match(Dist^2): 82.2369 | Penalty: 0.0000
+    #2 [REJECTED]: Greek Marinade with Yogurt
+       Sim: 0.0118 | Match(Dist^2): 75.2180 | Penalty: 0.1293 [Poor Target Match]
+    #3 [REJECTED]: Mixed Paella
+       Sim: 0.0118 | Match(Dist^2): 74.3136 | Penalty: 0.1492 [Poor Target Match]
+
+--- DAY 30: 2026-01-16 ---
+  [Breakfast] Target: Cal=653, Spice=21
+    #1 [SELECTED]: Osso Buco
+       Sim: 0.0140 | Match(Dist^2): 70.2764 | Penalty: 0.0000
+    #2 [REJECTED]: Thai Cucumber Salad (By Roz)
+       Sim: 0.0128 | Match(Dist^2): 77.3302 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Cheesy Chicken Enchilada Quinoa Casserole
+       Sim: 0.0125 | Match(Dist^2): 79.0906 | Penalty: 0.0000 [Poor Target Match]
+
+  [Lunch] Target: Cal=615, Spice=21
+    #1 [SELECTED]: Paella for Four; A Wonderful Spanish Mixed Seafood Stew
+       Sim: 0.0131 | Match(Dist^2): 75.3198 | Penalty: 0.0000
+    #2 [REJECTED]: Chilled Avocado and Cucumber Soup With Prawn and Scallop Salsa
+       Sim: 0.0129 | Match(Dist^2): 76.5606 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Galbi Tang (Korean Beef Short Ribs Soup)
+       Sim: 0.0121 | Match(Dist^2): 81.3678 | Penalty: 0.0000 [Poor Target Match]
+
+  [Dinner] Target: Cal=465, Spice=18
+    #1 [SELECTED]: Julia Child's Ratatouille
+       Sim: 0.0119 | Match(Dist^2): 83.2697 | Penalty: 0.0000
+    #2 [REJECTED]: Red Kidney Bean Jambalaya
+       Sim: 0.0117 | Match(Dist^2): 84.1221 | Penalty: 0.0000 [Poor Target Match]
+    #3 [REJECTED]: Assam Fish Curry
+       Sim: 0.0115 | Match(Dist^2): 86.2848 | Penalty: 0.0000 [Poor Target Match]
+
+
+
+================================================================================
+CONTINUOUS TRACKING: Most Repeated Recipe
+================================================================================
+Recipe: Green Thai Curry with Beef (ID: 586)
+Total selections: 2
+
+Day-by-Day Evolution:
+Format: Day | Distance(D²) | Penalty(P) | Score(S) | Status
+--------------------------------------------------------------------------------
+  1 |      51.2828 |     0.0000 |   0.019127 | SELECTED
+  2 |      54.7218 |  1000.0000 |   0.000000 | not selected
+  3 |      57.2057 |    15.3917 |   0.000000 | not selected
+  4 |      56.7168 |    13.3427 |   0.000000 | not selected
+  5 |      55.8860 |    11.5665 |   0.000002 | not selected
+  6 |      58.5682 |    10.0267 |   0.000006 | not selected
+  7 |      55.5758 |     8.6920 |   0.000017 | not selected
+  8 |      62.7183 |     7.5349 |   0.000038 | not selected
+  9 |      59.3643 |     6.5318 |   0.000089 | not selected
+ 10 |      60.8746 |     5.6623 |   0.000174 | not selected
+ 11 |      59.9176 |     4.9085 |   0.000323 | not selected
+ 12 |      57.6711 |     4.2551 |   0.000567 | not selected
+ 13 |      47.4088 |     3.6886 |   0.001080 | not selected
+ 14 |      46.9104 |     3.1976 |   0.001617 | not selected
+ 15 |      46.8145 |     2.7719 |   0.002277 | not selected
+ 16 |      47.0438 |     0.6007 |   0.012872 | not selected
+ 17 |      47.7601 |     0.5208 |   0.013521 | not selected
+ 18 |      47.6971 |     0.4514 |   0.014310 | not selected
+ 19 |      45.9732 |     0.3913 |   0.015566 | not selected
+ 20 |      45.9607 |     0.3392 |   0.016233 | not selected
+ 21 |      43.6915 |     0.2941 |   0.017685 | not selected
+ 22 |      44.0646 |     0.2549 |   0.018096 | not selected
+ 23 |      41.6718 |     0.2210 |   0.019637 | SELECTED
+ 24 |      48.2543 |  1000.0000 |   0.000000 | not selected
+ 25 |      51.3474 |    15.3917 |   0.000000 | not selected
+ 26 |      60.6170 |    13.3427 |   0.000000 | not selected
+ 27 |      58.4498 |    11.5665 |   0.000002 | not selected
+ 28 |      60.4376 |    10.0267 |   0.000005 | not selected
+ 29 |      59.3434 |     8.6920 |   0.000016 | not selected
+ 30 |      58.3296 |     7.5349 |   0.000041 | not selected
+================================================================================

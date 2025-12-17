@@ -1,0 +1,96 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[margin=1in]{geometry}
+
+\title{Mathematical Formalization: 7-Day Meal Simulation Loop}
+\author{Fuzzy Logic Recommender POC}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{System State Definitions}
+Let $T = \{1, \dots, 7\}$ denote the simulation steps (Days). For each step $t \in T$, the system state is defined by the user history $H_t$ and the trainable parameters $\Theta_t$.
+
+\subsection{Inputs}
+\begin{itemize}
+    \item \textbf{Recipe Set} $\mathcal{R}$: A static set of $N$ recipes, where each $r \in \mathcal{R}$ is a vector $r \in \mathbb{R}^k$ representing features (calories, protein, etc.).
+    \item \textbf{History} $H_t$: A sequence of past user choices up to time $t$. $H_0$ is the initial cold-start or seeded history.
+    \item \textbf{Parameters} $\Theta_t = \{W_t, \Delta_t\}$:
+    \begin{itemize}
+        \item $W_t \in \mathbb{R}^k$: Feature importance weights.
+        \item $\Delta_t \in \mathbb{R}^m$: Tunable shifts for membership functions (e.g., $\delta_{spice}$).
+    \end{itemize}
+\end{itemize}
+
+\section{The Simulation Loop}
+For each day $t \in [1, 7]$ and meal slot $s \in \{Breakfast, Lunch, Dinner\}$:
+
+\subsection{Step 1: Profile Aggregation (with Shrinkage)}
+The user preference profile $P_{t,s}$ is derived from $H_t$.
+Let $H_{t,s}'$ be the sub-sequence of the last $N=21$ orders in $H_t$ (global window).
+\begin{equation}
+P_{user} = \text{Median}(H_{t,s}')
+\end{equation}
+To stabilize noise (Cold-Start Shrinkage), we blend with the global slot median $P_{global}$:
+\begin{equation}
+P_{t,s} = \left(\frac{n}{n+k}\right) P_{user} + \left(\frac{k}{n+k}\right) P_{global}
+\end{equation}
+where $n = |H_{t,s}'|$ and $k=10$.
+
+\subsection{Step 2: Fuzzy Inference (Target Generation)}
+The Fuzzy Logic Controller (FLC) maps the profile and slot to a target vector $T_{t,s}$.
+\begin{equation}
+T_{t,s} = \text{FLC}(P_{t,s}, s | \Delta_t)
+\end{equation}
+The FLC uses Mamdani inference with dynamic fuzzy sets defined by $\Delta_t$.
+
+\subsection{Step 3: Ranking and Selection}
+For each candidate recipe $r \in \mathcal{R}_s$ (valid for slot $s$):
+\begin{enumerate}
+    \item \textbf{Distance}: Calculate weighted squared distance:
+    \begin{equation}
+    D^2(r, T_{t,s}) = \sum_{i=1}^k w_{t,i} \left( \frac{r_i - T_{t,s,i}}{\sigma_i} \right)^2
+    \end{equation}
+    \item \textbf{Repetition Penalty}:
+    Let $\tau_r = 3$. The penalty amplitude $A_r$ is determined by streak logic:
+    \begin{equation}
+    A_r = 
+    \begin{cases} 
+    100.0 & \text{if } r_{last1} = r \land r_{last2} = r \quad (\text{Streak}) \\
+    5.0 & \text{otherwise} \quad (\text{Base})
+    \end{cases}
+    \end{equation}
+    The Decay Penalty is:
+    \begin{equation}
+    \text{Pen}(r) = A_r \cdot \exp\left(-\frac{\text{days\_since}(r, t)}{\tau_r}\right)
+    \end{equation}
+    \item \textbf{Similarity Score}:
+    \begin{equation}
+    S(r) = \frac{1}{1 + D^2(r, T_{t,s}) + \text{Pen}(r)}
+    \end{equation}
+\end{enumerate}
+The system selects the top-ranked recipe:
+\begin{equation}
+r^*_{t,s} = \arg\max_{r \in \mathcal{R}_s} S(r)
+\end{equation}
+
+\subsection{Step 4: Feedback Update}
+The selected recipe is added to history:
+\begin{equation}
+H_{t+1} \leftarrow H_t \cup \{(t, s, r^*_{t,s})\}
+\end{equation}
+
+\subsection{Step 5: Parameter Learning}
+The error between the chosen recipe features $r^*$ and the generated target $T$ drives parameter updates via Gradient Descent-like heuristics ($\eta$ = learning rate).
+\begin{align}
+E &= r^*_{t,s} - T_{t,s} \\
+\Delta_{t+1} &= \Delta_t + \eta_\delta \cdot E \quad (\text{for Spice/Prep}) \\
+W_{t+1} &= W_t + \eta_w \cdot |E_{ratio}| \quad (\text{if } |E| \text{ large})
+\end{align}
+
+\section{Conclusion}
+This closed-loop system ensures that consecutive selections of the same item result in $A_r=100.0$, pushing the Similarity $S(r) \to 0$ for approximately 14 days, effectively strictly enforcing variety while adapting user preferences $\Theta$ over time.
+
+\end{document}

@@ -1,0 +1,20 @@
+{
+    "weights": {
+        "calories": 0.8000000000000019,
+        "protein": 0.8000000000000005,
+        "carbs": 0.8000000000000007,
+        "fat": 0.8000000000000005,
+        "prep_time": 0.8000000000000006,
+        "spice": 0.8000000000000006
+    },
+    "deltas": {
+        "spice_peak": -9.199999999999996,
+        "prep_boundary": -24.500000000000213
+    },
+    "gamma": 0.8,
+    "frequency_window": 14,
+    "recipe_freq_exponent": 2.0,
+    "cuisine_freq_exponent": 1.5,
+    "tau_recipe": 7.0,
+    "tau_cuisine": 5.0
+}
